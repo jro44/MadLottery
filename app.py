@@ -331,7 +331,7 @@ def parse_history(raw_text: str) -> pd.DataFrame:
     
     # 2. Chunk by page to prevent FIFO drift cascading across the entire file
     # The regex looks for "--- PAGE X ---" or "" patterns
-        page_chunks = re.split(r'--- PAGE \d+ ---|\', text)
+    page_chunks = re.split(r'--- PAGE \d+ ---|\', text)
     if not page_chunks or len(page_chunks) == 1:
         page_chunks = [text]
         
