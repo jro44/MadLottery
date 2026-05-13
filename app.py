@@ -344,7 +344,7 @@ def simulate_many(stats: HistoryStats, n_tickets: int, mode: str, intensity: flo
 _PLOTLY_LAYOUT = dict(
     paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
     font=dict(family="Montserrat, sans-serif", color="#eef2f5", size=13),
-    margin=dict(l=10, r=10, t=50, b=10), title=dict(font=dict(size=16, color="#eef2f5")),
+    margin=dict(l=10, r=10, t=50, b=10),title_font=dict(size=16, color="#eef2f5")) ,
 )
 
 def plot_frequency(stats: HistoryStats) -> go.Figure:
